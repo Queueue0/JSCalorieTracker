@@ -40,7 +40,7 @@ const StorageCtrl = (function() {
             localStorage.setItem('items', JSON.stringify(items));
         },
         clearItems: () => {
-            localStorage.setItem('items', JSON.stringify([]));
+            localStorage.removeItem('items');
         },
         getItems: () => {
             let items = [];
